@@ -1,5 +1,3 @@
-# API
-
 ## Users
 
 ### Create User
@@ -136,7 +134,7 @@ Access-Control-Allow-Methods: *
 Access-Control-Allow-Headers: *
 ```
 
-## Change password
+### Change password
 Changing the user password can be done by calling the update password function
 
 > Must-have: `user_token`, `old_password` and password (`new_password`)
@@ -281,7 +279,8 @@ curl -s -S -i -X DELETE -H "Content-Type: application/json" -H  "Authorization: 
 ```
 
 Response:
-```HTTP/1.1 204 No Content
+```
+HTTP/1.1 204 No Content
 Server: nginx/1.16.0
 Date: Wed, 10 Mar 2021 15:24:44 GMT
 Content-Type: application/json
@@ -608,7 +607,7 @@ Assign user, thing or channel to a group
 > Must-have: `user_token`, `group_id`, `member_id` and `member_type`
 
 ```
-curl -s -S -i -X POST -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id>/<thing_id_>/<channel_id_>"],"type":"<users>/<things>/<channels>"}' 
+curl -s -S -i -X POST -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id> | <thing_id_> | <channel_id_>"], "type":["users" | "things" | "channels"]}' 
 ```
 
 Response:
@@ -627,7 +626,7 @@ Unassign user, thing or channel from group
 > Must-have: `user_token`, `group_id`, `member_id` and `member_type`
 
 ```
-curl -s -S -i -X DELETE -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id>/<thing_id>/<channel_id>"], "type":"<users>/<things>/<channels>"}'
+curl -s -S -i -X DELETE -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id> | <thing_id_> | <channel_id_>"], "type":["users" | "things" | "channels"]}'
 ```
 
 Response:
