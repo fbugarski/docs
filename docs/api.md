@@ -607,7 +607,7 @@ Assign user, thing or channel to a group
 > Must-have: `user_token`, `group_id`, `member_id` and `member_type`
 
 ```
-curl -s -S -i -X POST -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id> | <thing_id_> | <channel_id_>"], "type":["users" | "things" | "channels"]}' 
+curl -s -S -i -X POST -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id>" | "<thing_id_>" | "<channel_id_>"], "type":["users" | "things" | "channels"]}'
 ```
 
 Response:
@@ -626,7 +626,7 @@ Unassign user, thing or channel from group
 > Must-have: `user_token`, `group_id`, `member_id` and `member_type`
 
 ```
-curl -s -S -i -X DELETE -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id> | <thing_id_> | <channel_id_>"], "type":["users" | "things" | "channels"]}'
+curl -s -S -i -X DELETE -H "Content-Type: application/json" -H "Authorization: <user_token>" http://localhost/groups/<group_id>/members -d '{"members":["<user_id>" | "<thing_id_>" | "<channel_id_>"], "type":["users" | "things" | "channels"]}'
 ```
 
 Response:
