@@ -893,7 +893,7 @@ Date: Wed, 03 Nov 2021 13:00:05 GMT
 
 ## API Key
 
-### Create API Key
+### Issue API Key
 Generates a new API key. Then new API key will be uniquely identified by its ID.
 Duration is expressed in seconds.
 
@@ -916,7 +916,7 @@ Access-Control-Expose-Headers: Location
 {"id":"4d62fb1e-085e-435c-a0c5-5255febfa35b","value":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDAwMzU1ODQsImp0aSI6IjRkNjJmYjFlLTA4NWUtNDM1Yy1hMGM1LTUyNTVmZWJmYTM1YiIsImlhdCI6MTYzOTkzNTU4NCwiaXNzIjoibWFpbmZsdXguYXV0aCIsInN1YiI6ImZscDFAZW1haWwuY29tIiwiaXNzdWVyX2lkIjoiYzkzY2FmYjMtYjNhNy00ZTdmLWE0NzAtMTVjMTRkOGVkMWUwIiwidHlwZSI6Mn0.RnvjhygEPPWFDEUKtfk5okzVhZzOcO0azr8gd5vby5M","issued_at":"2021-12-19T17:39:44.175088349Z","expires_at":"2021-12-20T21:26:24.175088349Z"}
 ```
 
-### Gets API key details for the given key
+### Get API key details
 
 > Must-have: 'user_token' and 'key_id"
 
