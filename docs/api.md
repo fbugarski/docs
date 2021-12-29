@@ -918,7 +918,7 @@ Access-Control-Expose-Headers: Location
 
 ### Get API key details
 
-> Must-have: 'user_token' and 'key_id"
+> Must-have: 'user_token' and 'key_id'
 
 ```bash
 curl -isSX GET  http://localhost/keys/<key_id> -H 'Content-Type: application/json' -H 'Authorization: <user_token>'
@@ -939,7 +939,7 @@ Access-Control-Expose-Headers: Location
 
 ### Revoke API key identified by the given ID
 
-> Must-have: 'user_token' and 'key_id"
+> Must-have: 'user_token' and 'key_id'
 
 ```bash
 curl -isSX DELETE  http://localhost/keys/<key_id> -H 'Content-Type: application/json' -H 'Authorization: <user_token>'  
