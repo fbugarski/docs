@@ -56,8 +56,8 @@ coap-cli post channels/0bb5ba61-a66e-4972-bab6-26f19962678f/messages/subtopic -a
 coap-cli post channels/0bb5ba61-a66e-4972-bab6-26f19962678f/messages/subtopic -auth 1e1017e6-dee7-45b4-8a13-00e6afeb66eb -d "hello world" -h 0.0.0.0 -p 1234
 ```
 To send a message, use `POST` request.
-To subscribe, send `GET` request with Observe option set to false. There are two ways to unsubscribe:
-  1) Send `GET` request with Observe option set to 1.
+To subscribe, send `GET` request with Observe option (flag `o`) set to false. There are two ways to unsubscribe:
+  1) Send `GET` request with Observe option set to true.
   2) Forget the token and send `RST` message as a response to `CONF` message received by the server.
 
 The most of the notifications received from the Adapter are non-confirmable. By [RFC 7641](https://tools.ietf.org/html/rfc7641#page-18):
